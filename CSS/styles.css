@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+}
+.apresentacao__conteudo1{
+    padding: 64px;
+    width: 40%;
+}
+
+.apresentacao__conteudo2{
+    width: 50%;
+    height: 100vh;
+    background-color: #2135A7;
+    position: fixed; /* Fixa a div na tela */
+    right: 0; /* Mantém no lado direito */
+    top: 0; /* Fixa no topo */
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    flex-direction: column; /* Coloca os itens (imagens) um abaixo do outro */
+}
+.apresentacao__conteudo1__voltar{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.apresentacao__conteudo1__voltar span{
+    color: #57534E;
+    margin-left: 3px;
+}
+.titulo-Principal{
+    margin-top: 20px;
+    color: #292524;
+}
+.paragrafo-principal{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #57534E;
+}
+/* formulario */
+.apresentacao__conteudo1__usuario h4{
+    color:#292524;
+    margin-bottom: 20px;
+}
+.apresentacao__conteudo1__usuario label{
+    color: #57534E;
+    font-size: 15px;
+}
+.apresentacao__conteudo1__usuario .sexo,
+.apresentacao__conteudo1__usuario .input_total{
+    width: 100%;
+    height: 35px; /* Defina a mesma altura para os dois */
+    border-radius: 5px;
+    border: 1px solid #8F8881;
+    box-shadow: none; /* Remove qualquer sombra padrão */
+    outline: none; /* Remove o contorno ao focar */
+    transition: box-shadow 0.3s ease;
+    box-sizing: border-box; /* Garante que padding e border não alterem o tamanho total */
+    padding: 10px 0px 10px 10px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+.apresentacao__conteudo1__usuario .input_total:focus {
+    border: 1px solid #F67841; /* Mantenha a borda ao focar */
+    box-shadow: 0 0 5px #F3541C; /* Adiciona a sombra ao focar */
+}
+.apresentacao__conteudo1__usuario .sexo:focus{
+    border: 1px solid #F67841; /* Mantenha a borda ao focar */
+    box-shadow: 0 0 5px #F3541C; 
+}
+.apresentacao__conteudo1__usuario{
+    display: inline-block;
+}
+/*residecial*/
+.endereco_residencial {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaçamento entre os inputs */
+    align-items: flex-start;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; /* Faz o label ficar acima do input */
+}
+
+.input_endereco_rua_cidade {
+    width: 60%;
+}
+
+.input_endereco_rua_estado {
+    width: 37%;
+}
+.inpt{
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #8F8881;
+    box-shadow: none; /* Remove sombra padrão */
+    outline: none; /* Remove contorno ao focar */
+    transition: box-shadow 0.3s ease, border 0.3s ease; /* Efeito suave */
+    box-sizing: border-box;
+}
+.inpt:focus {
+    border: 1px solid #F67841; /* Mantenha a borda ao focar */
+    box-shadow: 0 0 5px #F3541C; /* Adiciona a sombra ao focar */
+}
+.label_endereco {
+    color: #57534E;
+    font-size: 15px;
+    margin-bottom: 4px; 
+}
+/* trilhas */
+.apresentacao__conteudo1__trilhas{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 10px;
+    justify-content: flex-start;
+    gap: 10px;
+    
+}
+.trilha {
+    width: 40%;
+    display: inline-block;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    border: 2px solid #DCDCDC;
+    border-radius: 10px;
+    
+}
+.trilha img{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.trilha__nome{
+    display: block;
+    margin: auto;
+    text-align: center; /* Adicionando alinhamento do texto */
+}
+.termos{
+    font-size: 24px;
+    font-weight: 600;
+}
+.termos__condicao{
+    text-decoration: none;
+    color: #F67841;
+}
+.input_de_Enviar_cancelar{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 40px;
+}
+.input__enviar{
+    width: 25%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    background: #DC2626;
+}
+.input__cancelar{
+    width: 20%;
+    border-radius: 5px;
+    border: 2px solid #DC2626;
+    color: #DC2626;
+    background: white;
+    font-size: 15px;
+}
+.input_obrigatorio{
+    color: red;
+    font-weight: bold;
+}

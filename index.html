@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="conatiner">
+        <main class="apresentacao">
+            <section class="apresentacao__conteudo1">
+                <a href="inicio.html" class="apresentacao__conteudo1__voltar">
+                    <img src="img/arrow-left-02.png" alt="imagem icones voltar">
+                    <span>Voltar</span>
+                </a>
+                
+                <h1 class="titulo-Principal">Formulário de inscrição</h1>
+                <p class="paragrafo-principal">Preecha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
+
+                <div class="apresentacao__conteudo1__usuario">
+                    <h4>Informações do participante</h4>
+                    <form id="contact-form">
+                            <label for="nome">Nome completo <span class="input_obrigatorio">*</span></label>
+                            <input class="input_total" type="text" id="nome" name="nome" >
+
+                            <label for="dataNascimento">Data de Nascimento <span class="input_obrigatorio">*</span></label>
+                            <input  class="input_total" type="date" id="dataNascimento" name="dataNascimento" >
+
+                            <label for="cpf">CPF <span class="input_obrigatorio">*</span></label>
+                            <input class="input_total" type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="XXX.XXX.XXX-XX">
+
+                            <label for="sexo">Sexo <span class="input_obrigatorio">*</span></label> <br>
+                            <select class="sexo" id="sexo" name="sexo">
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="outro">Outro</option>
+                            </select>
+
+                            <label for="email">Email <span class="input_obrigatorio">*</span></label>
+                            <input class="input_total" type="email" id="email" name="email" >
+
+                            <label for="telefone">Telefone <span class="input_obrigatorio">*</span></label>
+                            <input  class="input_total" type="tel" id="telefone" name="telefone"  placeholder="(XX) XXXXX-XXXX" >
+
+                            <label for="file">Documento de indentidade <span class="input_obrigatorio">*</span></label>
+                            <input class="input_total" type="file" id="file" name="file">
+
+                            <h4>Endereço residencial</h4>
+                            <label class="label_endereco" for="cep">CEP <span class="input_obrigatorio">*</span></label>
+                            <input class="input_total" type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000">
+                            <div class="endereco_residencial">
+                                <div class="input-container input_endereco_rua_cidade">
+                                    <label class="label_endereco" for="rua">Rua <span class="input_obrigatorio">*</span></label> 
+                                    <input class="inpt" type="text" id="telefone" name="rua" placeholder="Nome da rua">
+                                </div>
+                            
+                                <div class="input-container input_endereco_rua_estado">
+                                    <label class="label_endereco" for="numero">Número</label> 
+                                    <input class="inpt" type="text"  id="telefone" name="numero" placeholder="Número da casa">
+                                </div>
+                            
+                                <div class="input-container input_endereco_rua_cidade">
+                                    <label class="label_endereco" for="cidade">Cidade <span class="input_obrigatorio">*</span></label> 
+                                    <input class="inpt" type="text"  id="telefone" name="cidade" placeholder="Cidade">
+                                </div>
+                            
+                                <div class="input-container input_endereco_rua_estado">
+                                    <label class="label_endereco" for="estado">Estado <span class="input_obrigatorio">*</span></label> 
+                                    <select class="inpt"  id="telefone" name="estado">
+                                        <option value="">Selecione</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label for="file">Comprovante de residência <span class="input_obrigatorio">*</span></label>
+                            <input class="input_total" type="file" id="file" name="file">
+
+                            <h4>Trilhas de aprendizagem</h4>
+                            <p>Selecione apenas uma trilha <span class="input_obrigatorio">*</span></p>
+                            <div class="apresentacao__conteudo1__trilhas">
+                                <div class="trilha">
+                                    <label>
+                                        <input type="radio" name="trilha" checked>
+                                        <img src="img/icon-front.png" alt="Front-end">
+                                        <span class="trilha__nome">Programação Front-end</span>
+                                    </label>
+                                </div>
+                                <div class="trilha">
+                                    <label>
+                                        <input type="radio" name="trilha">
+                                        <img src="img/icon-back.png" alt="Back-end">
+                                        <span class="trilha__nome"> Programação Back-end</span>
+                                    </label>
+                                </div>
+                                <div class="trilha">
+                                    <label>
+                                        <input type="radio" name="trilha">
+                                        <img src="img/icon-jogos.png" alt="Jogos">
+                                        <span class="trilha__nome">Programação de Jogos</span>
+                                    </label>
+                                </div>
+                                <div class="trilha">
+                                    <label>
+                                        <input type="radio" name="trilha">
+                                        <img src="img/ux (1).png" alt="UX">
+                                        <span class="trilha__nome">Design e Experiência</span>
+                                    </label>
+                                </div>
+                                <div class="trilha">
+                                    <label>
+                                        <input type="radio" name="trilha">
+                                        <img src="img/Frame 48095973.png" alt="dados">
+                                        <span class="trilha__nome">Ciência de Dados</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="termos">
+                                <label>
+                                    <input type="checkbox" name="termos" required>
+                                    Declaro que li e concordo com os <a class="termos__condicao" href="termos.html" target="_blank">termos de uso</a> e <a  class="termos__condicao" href="politica-privacidade.html" target="_blank">política de privacidade</a>.
+                                </label>
+                            </div>
+
+                            <div class="input_de_Enviar_cancelar">
+                                <input  class="input__cancelar" type="reset" value="Cancelar">
+                                <input  class="input__enviar" type="submit" value="Fazer Inscrição">
+                            </div>
+                            <div id="alert" class="d-none"></div>
+                    </form>
+                </div>
+            </section>
+
+            <section  class="apresentacao__conteudo2">
+                <img src="img/Ilustration.png"  alt="">
+                <img src="img/logo-trilhas-inova.png" alt="">
+            </section>
+        </main>
+    </div>
+    <script src="JS/contato.js"></script>
+    <script src="JS/javascript.js"></script>
+</body>
+</html>
